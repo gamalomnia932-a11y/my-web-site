@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: "Cairo", sans-serif;
+    background: #fff7fa;
+    color: #444;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #ffb7d5;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+header .logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+}
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav a:hover {
+    opacity: 0.7;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(#ffdce9, #ffeaf2);
+}
+.hero h1 {
+    font-size: 50px;
+    color: #d14f7f;
+}
+.hero p {
+    font-size: 20px;
+}
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #ff7bab;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Products */
+.products {
+    padding: 60px 20px;
+    text-align: center;
+}
+.products h2 {
+    color: #d14f7f;
+    margin-bottom: 40px;
+}
+.grid {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card img {
+    width: 100%;
+    border-radius: 12px;
+}
+.card h3 {
+    margin: 10px 0 5px;
+    color: #d14f7f;
+}
+
+/* About */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+    background: #ffeaf2;
+}
+.about h2 {
+    color: #d14f7f;
+}
+
+/* Contact */
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+.contact h2 {
+    color: #d14f7f;
+}
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+form input, form textarea {
+    margin: 10px 0;
+    padding: 12px;
+    border: 1px solid #ffc3d7;
+    border-radius: 10px;
+}
+form button {
+    padding: 12px;
+    background: #ff7bab;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+form button:hover {
+    opacity: 0.85;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ffb7d5;
+    color: white;
+    margin-top: 40px;
+}
